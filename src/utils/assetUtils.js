@@ -40,7 +40,7 @@ function loadImage(path) {
     img.addEventListener(
       'error',
       function() {
-        throw `Couldn't resolve asset at path ${path}`;
+        throw new Error(`Couldn't resolve asset at path ${path}`);
       },
       false
     );

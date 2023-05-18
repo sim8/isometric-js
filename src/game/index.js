@@ -92,7 +92,7 @@ function draw(state) {
   const zoom = getCameraZoom(state);
   const mouseX = getMouseX(state);
   const mouseY = getMouseY(state);
-  const [worldScreenWidth, worldScreenHeight] = getWorldScreenSize(state);
+  const [__worldScreenWidth, worldScreenHeight] = getWorldScreenSize(state);
   const rotation = getCameraRotation(state);
 
   // Determines what point to start rendering world from
